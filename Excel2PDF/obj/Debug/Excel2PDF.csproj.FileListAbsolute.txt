@@ -1,0 +1,13 @@
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\Excel2PDF.exe.config
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\Excel2PDF.exe
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\Excel2PDF.pdb
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\Aspose.Cells.dll
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\Aspose.Cells.xml
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\obj\Debug\Excel2PDF.csproj.CoreCompileInputs.cache
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\obj\Debug\Excel2PDF.csproj.CopyComplete
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\obj\Debug\Excel2PDF.exe
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\obj\Debug\Excel2PDF.pdb
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\itextsharp.dll
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\itextsharp.xtra.dll
+C:\Users\kamil.mustecep\source\repos\Excel2PDF\Excel2PDF\bin\Debug\itextsharp.xml
