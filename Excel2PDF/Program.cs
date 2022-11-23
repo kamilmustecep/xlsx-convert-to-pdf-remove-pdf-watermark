@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using iTextSharp.xtra.iTextSharp.text.pdf.pdfcleanup;
 using System.IO;
+using System.Net.Mail;
+using System.Net;
+using System.Reflection;
 
 namespace Excel2PDF
 {
@@ -25,6 +28,12 @@ namespace Excel2PDF
             //WATERMARK REMOVER 
             textsharpie(fileName);
 
+
+            //SEND MAİL
+            List<string> files = new List<string>();
+            files.Add(fileName.Replace("xlsx", "pdf"));
+
+            sendMail(files);
         }
 
 
@@ -59,6 +68,46 @@ namespace Excel2PDF
             {
                 Console.WriteLine(e.Message);
             }
+        }
+
+
+        static void sendMail(List<string> fileNames)
+        {
+            try
+            {
+                SmtpClient sc = new SmtpClient();
+
+                sc.Port = 587;
+                sc.Host = "mail.company.com";
+                sc.UseDefaultCredentials = false;
+                sc.EnableSsl = true;
+                sc.Credentials = new NetworkCredential("mail", "password");
+
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("mail", "TEST MAİL");
+
+                mail.To.Add("target.mail@gmail.com");
+
+                mail.Subject = "Test Mail!";
+                mail.IsBodyHtml = true;
+
+                mail.Body = "PDF'ler ektedir.";
+
+                foreach (var name in fileNames)
+                {
+                    mail.Attachments.Add(new Attachment("PDFS-OF-DAY/" +name));
+                }
+                
+                sc.Send(mail);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("MAİL HATASI");
+                throw;
+            }
+
+
+
         }
     }
 }
